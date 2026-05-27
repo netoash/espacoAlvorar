@@ -57,7 +57,7 @@ header {
 
 .logo h2 {
   font-size: 1.2rem;
-  color: var(--verde);
+  color: var(--bege);
   letter-spacing: 4px;
   margin-bottom: 5px;
 }
@@ -126,6 +126,7 @@ header {
 }
 
 .imagem-area {
+  border-radius: 55% 45% 60% 40% / 45% 60% 40% 55%;
   position: relative;
   display: flex;
   justify-content: center;
