@@ -126,7 +126,6 @@ header {
 }
 
 .imagem-area {
-  border-radius: 55% 45% 60% 40% / 45% 60% 40% 55%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -146,7 +145,7 @@ header {
 .imagem-area img {
   width: 500px;
   max-width: 100%;
-  border-radius: 50px;
+  border-radius: 55% 45% 60% 40% / 45% 60% 40% 55%;
   position: relative;
   z-index: 2;
   box-shadow: 0 25px 50px rgba(0, 0, 0, .12);
