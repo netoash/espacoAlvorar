@@ -2,157 +2,285 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espaço Alvorar Infantil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Espaço Alvorar | Fisioterapia Pediátrica</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700&family=Sacramento&display=swap"
-    rel="stylesheet">
+    <meta name="description"
+        content="Espaço Alvorar - Fisioterapia Pediátrica especializada em desenvolvimento infantil, estimulação precoce e atendimento humanizado.">
 
-  <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Espaço Alvorar">
+    <meta property="og:description"
+        content="Fisioterapia Pediátrica especializada em desenvolvimento infantil.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <!-- NAVBAR -->
-    <nav class="navbar">
 
-      <div class="nav-container">
+    <!-- HEADER -->
 
-        <!-- LOGO -->
-        <div class="nav-logo">
-          <h2>ESPAÇO</h2>
-          <h1>Alvorar</h1>
+    <header class="header">
+
+        <div class="container">
+
+            <a href="#" class="logo">
+                Espaço Alvorar
+            </a>
+
+            <nav class="nav" id="nav">
+
+                <a href="#home">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="agendamento.html">Agendamento</a>
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <button id="menu-btn" class="menu-btn">
+                ☰
+            </button>
+
         </div>
 
-        <!-- MENU -->
-        <ul class="nav-menu">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Benefícios</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
+    </header>
 
-        <!-- BOTÃO -->
-        <a href="#" class="nav-btn">
-          Agendar
-        </a>
+    <!-- HERO -->
 
-      </div>
+    <section id="home" class="hero">
 
-    </nav>
+        <div class="container hero-content">
 
-    <div class="bg-shape-top"></div>
+            <div class="hero-text">
 
-    <div class="container">
+                <h1>
+                    Desenvolvimento Infantil com Cuidado e Acolhimento
+                </h1>
 
-      <div>
+                <p>
+                    Atendimento especializado em fisioterapia pediátrica para
+                    ajudar cada criança a alcançar seu potencial.
+                </p>
 
-        <div class="logo">
-          <h2>ESPAÇO</h2>
-          <h1></h1>
-          <span></span>
+                <div class="hero-buttons">
+
+                    <a href="agendamento.html" class="btn-primary">
+                        Agendar Avaliação
+                    </a>
+
+                    <a href="https://wa.me/5585999999999" class="btn-secondary">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="assets/img/hero.jpg"
+                    alt="Fisioterapia Pediátrica">
+
+            </div>
+
         </div>
 
-        <div class="title">
-          <h3>
-            Benefícios da
-            <span class="destaque">Fisioterapia</span>
-            Pediátrica
-          </h3>
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre" class="sobre">
+
+        <div class="container">
+
+            <h2>Conheça o Espaço Alvorar</h2>
+
+            <p>
+                Nosso propósito é promover desenvolvimento, autonomia e qualidade
+                de vida para crianças e suas famílias através de um atendimento
+                humanizado e individualizado.
+            </p>
+
         </div>
 
-        <div class="descricao">
-          Cuidado que acompanha cada fase do desenvolvimento com amor,
-          ciência e propósito. Um espaço acolhedor para estimular
-          autonomia, movimento e qualidade de vida das crianças.
+    </section>
+
+    <!-- SERVIÇOS -->
+
+    <section id="servicos" class="servicos">
+
+        <div class="container">
+
+            <h2>Nossos Serviços</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Fisioterapia Pediátrica</h3>
+                    <p>Acompanhamento especializado.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Estimulação Precoce</h3>
+                    <p>Desenvolvimento motor infantil.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Atendimento Domiciliar</h3>
+                    <p>Conforto para a família.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Orientação Familiar</h3>
+                    <p>Suporte contínuo aos responsáveis.</p>
+                </div>
+
+            </div>
+
         </div>
 
-        <a href="#" class="btn">
-          Agendar Atendimento
-        </a>
+    </section>
 
-      </div>
+    <!-- ESTATÍSTICAS -->
 
-      <div class="imagem-area">
+    <section class="stats">
 
-        <!--<div class="blob"></div>-->
+        <div class="container stats-grid">
 
-        <img src="assets/1000135582.png" alt="Fisioterapia Pediátrica">
+            <div>
+                <h3>+300</h3>
+                <p>Atendimentos</p>
+            </div>
 
-        <!-- <div class="floating-card">
-          <h4>✨ Mais autonomia</h4>
-          <p>
-            Mais movimento, confiança e liberdade para explorar o mundo.
-          </p>
-        </div> -->
+            <div>
+                <h3>+100</h3>
+                <p>Famílias Atendidas</p>
+            </div>
 
-      </div>
+            <div>
+                <h3>95%</h3>
+                <p>Satisfação</p>
+            </div>
 
-    </div>
+        </div>
 
-  </header>
+    </section>
 
-  <section class="beneficios">
+    <!-- DEPOIMENTOS -->
 
-    <h2>Como a fisioterapia ajuda?</h2>
+    <section id="depoimentos" class="depoimentos">
 
-    <div class="grid">
+        <div class="container">
 
-      <div class="card">
-        <div class="icone">🧸</div>
-        <h3>Desenvolvimento Motor</h3>
-        <p>
-          Estimula equilíbrio, coordenação e força de forma divertida
-          e adequada para cada idade.
-        </p>
-      </div>
+            <h2>O que dizem as famílias</h2>
 
-      <div class="card">
-        <div class="icone">🧠</div>
-        <h3>Postura e Alinhamento</h3>
-        <p>
-          Auxilia na consciência corporal e promove uma postura mais saudável.
-        </p>
-      </div>
+            <div class="cards">
 
-      <div class="card">
-        <div class="icone">🌿</div>
-        <h3>Respiração</h3>
-        <p>
-          Melhora a capacidade respiratória e o bem-estar no dia a dia.
-        </p>
-      </div>
+                <div class="card">
+                    <p>
+                        "Excelente atendimento e evolução perceptível."
+                    </p>
+                </div>
 
-      <div class="card">
-        <div class="icone">💛</div>
-        <h3>Autonomia</h3>
-        <p>
-          Incentiva independência nas atividades diárias e fortalece a autoestima.
-        </p>
-      </div>
+                <div class="card">
+                    <p>
+                        "Profissional extremamente atenciosa."
+                    </p>
+                </div>
 
-    </div>
+                <div class="card">
+                    <p>
+                        "Nos sentimos acolhidos desde o primeiro dia."
+                    </p>
+                </div>
 
-  </section>
+            </div>
 
-  <footer>
+        </div>
 
-    <h3>Vamos juntos?</h3>
+    </section>
 
-    <p>
-      Cada criança é única. Cada conquista merece ser celebrada.
-    </p>
+    <!-- FAQ -->
 
-    <a href="#" class="btn">
-      Entrar em contato
+    <section class="faq">
+
+        <div class="container">
+
+            <h2>Perguntas Frequentes</h2>
+
+            <details>
+                <summary>Atende convênio?</summary>
+                <p>Consulte disponibilidade.</p>
+            </details>
+
+            <details>
+                <summary>Faz atendimento domiciliar?</summary>
+                <p>Sim.</p>
+            </details>
+
+            <details>
+                <summary>Como funciona a avaliação?</summary>
+                <p>É realizada uma avaliação individualizada.</p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Agende uma avaliação e conheça nosso trabalho
+            </h2>
+
+            <a href="agendamento.html" class="btn-primary">
+                Agendar Agora
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <footer id="contato" class="footer">
+
+        <div class="container">
+
+            <h3>Espaço Alvorar</h3>
+
+            <p>Fortaleza - CE</p>
+
+            <p>(85) 99999-9999</p>
+
+            <p>contato@espacoalvorar.com.br</p>
+
+        </div>
+
+    </footer>
+
+    <!-- WHATSAPP -->
+
+    <a href="https://wa.me/5585999999999"
+        class="whatsapp-float">
+
+        💬
+
     </a>
 
-  </footer>
+    <script src="js/menu.js"></script>
 
 </body>
 

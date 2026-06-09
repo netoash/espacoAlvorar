@@ -1,0 +1,97 @@
+/* TABLETS */
+
+@media(max-width:992px){
+
+    .hero-content{
+        grid-template-columns:1fr;
+    }
+
+    .agendamento-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* CELULARES */
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        padding:20px;
+        display:none;
+        box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    .nav.active{
+        display:flex;
+    }
+
+    .hero{
+        padding:50px 0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .hero p{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+    .agendamento-form{
+        padding:25px;
+    }
+
+    .agendamento-info h1{
+        font-size:2rem;
+    }
+
+}
+
+/* TELAS PEQUENAS */
+
+@media(max-width:480px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero h1{
+        font-size:1.7rem;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+    .stats-grid h3{
+        font-size:2.2rem;
+    }
+
+}

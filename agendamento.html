@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento | Espaço Alvorar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                Espaço Alvorar
+            </a>
+
+            <nav class="nav" id="nav">
+
+                <a href="index.html">Início</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#contato">Contato</a>
+
+            </nav>
+
+            <button id="menu-btn" class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+    <section class="agendamento-page">
+
+        <div class="container">
+
+            <div class="agendamento-grid">
+
+                <div class="agendamento-info">
+
+                    <h1>
+                        Agende uma Avaliação
+                    </h1>
+
+                    <p>
+                        Estamos prontos para acolher sua família e
+                        entender as necessidades da sua criança.
+                    </p>
+
+                    <div class="info-card">
+
+                        <h3>Contato</h3>
+
+                        <p>📞 (85) 99999-9999</p>
+                        <p>📧 contato@espacoalvorar.com.br</p>
+                        <p>📍 Fortaleza - CE</p>
+
+                    </div>
+
+                </div>
+
+                <div class="agendamento-form">
+
+                    <form id="form-agendamento">
+
+                        <div class="input-group">
+
+                            <label>Nome do Responsável</label>
+
+                            <input
+                                type="text"
+                                name="responsavel"
+                                required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Telefone</label>
+
+                            <input
+                                type="tel"
+                                name="telefone"
+                                required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>E-mail</label>
+
+                            <input
+                                type="email"
+                                name="email">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Nome da Criança</label>
+
+                            <input
+                                type="text"
+                                name="crianca"
+                                required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Idade</label>
+
+                            <input
+                                type="number"
+                                min="0"
+                                max="18"
+                                name="idade">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Serviço</label>
+
+                            <select name="servico">
+
+                                <option>
+                                    Avaliação Inicial
+                                </option>
+
+                                <option>
+                                    Fisioterapia Pediátrica
+                                </option>
+
+                                <option>
+                                    Atendimento Domiciliar
+                                </option>
+
+                                <option>
+                                    Estimulação Precoce
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Data Preferencial</label>
+
+                            <input
+                                type="date"
+                                name="data">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Horário Preferencial</label>
+
+                            <input
+                                type="time"
+                                name="hora">
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Observações</label>
+
+                            <textarea
+                                rows="5"
+                                name="observacoes"></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn-primary">
+
+                            Solicitar Agendamento
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/menu.js"></script>
+    <script src="js/agendamento.js"></script>
+
+</body>
+
+</html>
