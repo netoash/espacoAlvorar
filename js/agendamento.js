@@ -16,21 +16,26 @@ document
     const servico =
     this.servico.value;
 
+    const data =
+    this.data.value;
+
+     const hora =
+    this.hora.value;
+
+     const observacoes =
+    this.observacoes.value;
+
     const mensagem =
-`Olá.
-
-Nome: ${nome}
-
-Criança: ${crianca}
-
-Telefone: ${telefone}
-
-Serviço: ${servico}
-
-Gostaria de agendar uma avaliação.`;
+`Olá. Me chamo ${nome} 
+sou responsavel do(a) ${crianca} 
+gostaria de agendar para ${servico} 
+na data: ${data} 
+às ${hora}
+Meu Contato: ${telefone} 
+${observacoes} `;
 
     const url =
-`https://wa.me/5585999999999?text=${encodeURIComponent(mensagem)}`;
+`https://wa.me/5585994317403?text=${encodeURIComponent(mensagem)}`;
 
     window.open(url);
 
