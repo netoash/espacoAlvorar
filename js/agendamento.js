@@ -1,13 +1,37 @@
-const form = document.getElementById('form-agendamento');
-
-form.addEventListener('submit', function(e){
+document
+.getElementById("form-agendamento")
+.addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    alert(
-        'Solicitação enviada com sucesso! Em breve entraremos em contato.'
-    );
+    const nome =
+    this.responsavel.value;
 
-    form.reset();
+    const crianca =
+    this.crianca.value;
+
+    const telefone =
+    this.telefone.value;
+
+    const servico =
+    this.servico.value;
+
+    const mensagem =
+`Olá.
+
+Nome: ${nome}
+
+Criança: ${crianca}
+
+Telefone: ${telefone}
+
+Serviço: ${servico}
+
+Gostaria de agendar uma avaliação.`;
+
+    const url =
+`https://wa.me/5585999999999?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url);
 
 });

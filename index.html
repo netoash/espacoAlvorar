@@ -11,16 +11,18 @@
         content="Espaço Alvorar - Fisioterapia Pediátrica especializada em desenvolvimento infantil, estimulação precoce e atendimento humanizado.">
 
     <meta property="og:title" content="Espaço Alvorar">
-    <meta property="og:description"
-        content="Fisioterapia Pediátrica especializada em desenvolvimento infantil.">
+    <meta property="og:description" content="Fisioterapia Pediátrica especializada em desenvolvimento infantil.">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 <body>
 
@@ -55,19 +57,24 @@
 
     <!-- HERO -->
 
-    <section id="home" class="hero">
+    <section class="hero-video">
 
-        <div class="container hero-content">
+        <video autoplay muted loop playsinline>
 
-            <div class="hero-text">
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="hero-overlay">
+
+            <div class="container">
 
                 <h1>
-                    Desenvolvimento Infantil com Cuidado e Acolhimento
+                    Cuidando do desenvolvimento infantil com carinho e excelência
                 </h1>
 
                 <p>
-                    Atendimento especializado em fisioterapia pediátrica para
-                    ajudar cada criança a alcançar seu potencial.
+                    Atendimento especializado em fisioterapia pediátrica.
                 </p>
 
                 <div class="hero-buttons">
@@ -76,18 +83,11 @@
                         Agendar Avaliação
                     </a>
 
-                    <a href="https://wa.me/5585999999999" class="btn-secondary">
-                        WhatsApp
+                    <a href="#" class="btn-secondary">
+                        Conhecer Serviços
                     </a>
 
                 </div>
-
-            </div>
-
-            <div class="hero-image">
-
-                <img src="assets/img/hero.jpg"
-                    alt="Fisioterapia Pediátrica">
 
             </div>
 
@@ -121,7 +121,7 @@
 
             <h2>Nossos Serviços</h2>
 
-            <div class="cards">
+            <div class="cards" >
 
                 <div class="card">
                     <h3>Fisioterapia Pediátrica</h3>
@@ -156,51 +156,99 @@
         <div class="container stats-grid">
 
             <div>
-                <h3>+300</h3>
+
+                <h3 class="counter" data-target="300">
+                    0
+                </h3>
+
                 <p>Atendimentos</p>
+
             </div>
 
             <div>
-                <h3>+100</h3>
-                <p>Famílias Atendidas</p>
+
+                <h3 class="counter" data-target="100">
+                    0
+                </h3>
+
+                <p>Famílias</p>
+
             </div>
 
             <div>
-                <h3>95%</h3>
+
+                <h3 class="counter" data-target="95">
+                    0
+                </h3>
+
                 <p>Satisfação</p>
+
             </div>
 
         </div>
 
     </section>
 
+    <!-- GALERIA DE FOTOS -->
+     
+    <section class="galeria">
+
+    <div class="container">
+
+        <h2>Nosso Espaço</h2>
+
+        <div class="galeria-grid">
+
+            <img src="assets/img/1.jpg">
+            <img src="assets/img/2.jpg">
+            <img src="assets/img/3.jpg">
+            <img src="assets/img/4.jpg">
+
+        </div>
+
+    </div>
+
+</section>
+
     <!-- DEPOIMENTOS -->
 
-    <section id="depoimentos" class="depoimentos">
+    <section class="testimonial-slider">
 
-        <div class="container">
+        <div class="slides">
 
-            <h2>O que dizem as famílias</h2>
+            <div class="slide">
 
-            <div class="cards">
+                <p>
+                    Meu filho teve uma evolução incrível.
+                </p>
 
-                <div class="card">
-                    <p>
-                        "Excelente atendimento e evolução perceptível."
-                    </p>
-                </div>
+                <strong>
+                    Família A
+                </strong>
 
-                <div class="card">
-                    <p>
-                        "Profissional extremamente atenciosa."
-                    </p>
-                </div>
+            </div>
 
-                <div class="card">
-                    <p>
-                        "Nos sentimos acolhidos desde o primeiro dia."
-                    </p>
-                </div>
+            <div class="slide">
+
+                <p>
+                    Atendimento acolhedor.
+                </p>
+
+                <strong>
+                    Família B
+                </strong>
+
+            </div>
+
+            <div class="slide">
+
+                <p>
+                    Excelente profissional.
+                </p>
+
+                <strong>
+                    Família C
+                </strong>
 
             </div>
 
@@ -273,15 +321,25 @@
 
     <!-- WHATSAPP -->
 
-    <a href="https://wa.me/5585999999999"
-        class="whatsapp-float">
+    <a href="https://wa.me/5585999999999" class="whatsapp-float">
 
         💬
 
     </a>
 
     <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/slider.js"></script>
+    
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+
+    <script>
+
+        AOS.init();
+
+    </script>
 </body>
 
 </html>
