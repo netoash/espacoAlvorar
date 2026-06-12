@@ -9,6 +9,10 @@
 
 <link rel="stylesheet" href="css/admin.css">
 
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -21,29 +25,53 @@
 
         <ul>
 
-            <li>
-                <a href="dashboard.html">
-                    Dashboard
-                </a>
-            </li>
+           <li>
 
-            <li>
-                <a href="pacientes.html">
-                    Pacientes
-                </a>
-            </li>
+    <a href="dashboard.html">
 
-            <li>
-                <a href="agenda.html">
-                    Agenda
-                </a>
-            </li>
+        <i class="fa-solid fa-chart-line"></i>
 
-            <li>
-                <a href="financeiro.html">
-                    Financeiro
-                </a>
-            </li>
+        <span>Dashboard</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="pacientes.html" class="active">
+
+        <i class="fa-solid fa-user-group"></i>
+
+        <span>Pacientes</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="agenda.html">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <span>Agenda</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="financeiro.html">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <span>Financeiro</span>
+
+    </a>
+
+</li>
 
         </ul>
 
@@ -55,11 +83,35 @@
 
             <h1>Pacientes</h1>
 
-            <button class="btn">
+            <button id="novoPaciente">
 
-                Novo Paciente
+Novo Paciente
 
-            </button>
+</button>
+
+<div id="modalPaciente"
+class="modal">
+
+    <div class="modal-content">
+
+        <h2>
+
+            Novo Paciente
+
+        </h2>
+
+        <input
+        placeholder="Nome">
+
+        <button>
+
+            Salvar
+
+        </button>
+
+    </div>
+
+</div>
 
         </header>
 
@@ -101,6 +153,7 @@
 
 </div>
 
+<script src="js/paciente.js"></script>
 </body>
 
 </html>

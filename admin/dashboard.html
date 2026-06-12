@@ -9,37 +9,88 @@
 
 <link rel="stylesheet" href="css/admin.css">
 
+<link rel="stylesheet" href="css/dark-theme.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
+
 <body>
+
 
 <div class="layout">
 
     <aside class="sidebar">
+        <button id="toggleSidebar">
 
-        <h2>Alvorar</h2>
+    ☰ 
+
+    </button>
+
+        <button id="themeToggle">
+
+🌙
+
+</button>
+
+        
 
         <ul>
 
             <li>
-                <a href="dashboard.html">
-                    Dashboard
-                </a>
-            </li>
 
-            <li>
-                <a href="pacientes.html">
-                    Pacientes
-                </a>
-            </li>
+<li>
 
-            <li>
-                <a href="agenda.html">
-                    Agenda
-                </a>
-            </li>
+    <a href="dashboard.html" class="active">
 
-        </ul>
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>Dashboard</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="pacientes.html">
+
+        <i class="fa-solid fa-user-group"></i>
+
+        <span>Pacientes</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="agenda.html">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <span>Agenda</span>
+
+    </a>
+
+</li>
+
+<li>
+
+    <a href="financeiro.html">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <span>Financeiro</span>
+
+    </a>
+
+</li>
+
+</ul>
 
     </aside>
 
@@ -51,41 +102,45 @@
 
         </header>
 
-        <section class="cards">
+        <section class="dashboard-cards">
 
-            <div class="card">
+    <div class="card">
 
-                <h3>Pacientes</h3>
+        <small>
+            Pacientes Ativos
+        </small>
 
-                <span>128</span>
+        <h2>
+            128
+        </h2>
 
-            </div>
+    </div>
 
-            <div class="card">
+    <div class="card">
 
-                <h3>Consultas Hoje</h3>
+        <small>
+            Atendimentos Hoje
+        </small>
 
-                <span>12</span>
+        <h2>
+            12
+        </h2>
 
-            </div>
+    </div>
 
-            <div class="card">
+    <div class="card">
 
-                <h3>Pendentes</h3>
+        <small>
+            Receita Mensal
+        </small>
 
-                <span>5</span>
+        <h2>
+            R$ 8.250
+        </h2>
 
-            </div>
+    </div>
 
-            <div class="card">
-
-                <h3>Receita</h3>
-
-                <span>R$ 8.250</span>
-
-            </div>
-
-        </section>
+</section>
 
         <section class="dashboard-table">
 
@@ -121,11 +176,23 @@
 
         </section>
 
+        
+    <div class="card">
+
+    <canvas id="graficoPacientes">
+
+    </canvas>
+
     </main>
 
 </div>
+</div>
+
 
 <script src="js/dashboard.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 

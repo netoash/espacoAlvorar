@@ -1,0 +1,22 @@
+body.dark{
+
+    background:#111827;
+    color:white;
+}
+
+body.dark .card{
+
+    background:#1f2937;
+}
+
+body.dark table{
+
+    background:#1f2937;
+}
+
+body.dark input,
+body.dark textarea{
+
+    background:#374151;
+    color:white;
+}
