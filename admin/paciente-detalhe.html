@@ -97,36 +97,35 @@
 
         <div class="actions">
 
-            <a
-            href="prontuario.html"
-            class="btn">
+    <button class="btn"
+        onclick="abrirPagina('prontuario.html')">
+        Prontuário
+    </button>
 
-            Prontuário
+    <button class="btn"
+        onclick="abrirPagina('evolucao.html')">
+        Evoluções
+    </button>
 
-            </a>
+    <button class="btn"
+        onclick="abrirPagina('documentos.html')">
+        Documentos
+    </button>
 
-            <a
-            href="evolucao.html"
-            class="btn">
+</div>
 
-            Evoluções
-
-            </a>
-
-            <a
-            href="documentos.html"
-            class="btn">
-
-            Documentos
-
-            </a>
-
-        </div>
+<iframe
+    id="conteudo-frame"
+    src="prontuario.html"
+    width="100%"
+    height="800"
+    frameborder="0">
+</iframe>
 
     </main>
 
 </div>
-
+<script src="js/paciente.js"></script>
 </body>
 
 </html>
